@@ -1,4 +1,14 @@
-# Usage
+# Python library to produce Fast Data Science branded graphs in Plotly
+
+## Installation
+
+```
+python setup.py install
+```
+
+## Usage
+
+### Light theme
 
 ```
 import fastdatascience
