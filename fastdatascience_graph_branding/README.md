@@ -4,10 +4,12 @@
 import fastdatascience
 
 import plotly.express as px
-fig = px.line(x=df["date"], y=df["y"],
-                title="<b>Demand for data scientists is increasing over time</b><br><sup>Data science postings per 1 million postings on Indeed. Data source: indeed.com</sup>")
+fig = px.line(x=[1,2,3], y=[3,1,2],
+                title="<b>Receiver operating characteristic</b>")
 
 fastdatascience.brand(fig)
 
 fig.show(renderer="png")
 ```
+
+![fds.png](fds.png)
