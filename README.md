@@ -11,7 +11,7 @@ This repository contains
 
 Primary
 
-![colours/test.svg](colours/test.svg)
+![./colours/test.svg](./colours/test.svg)
 
 ```
 #57cc98 
