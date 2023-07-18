@@ -11,7 +11,7 @@ This repository contains
 
 Primary
 
-![Alt text](./colours/test.svg)
+![Alt text](https://raw.githubusercontent.com/fastdatascience/brand/main/colours/test.svg)
 
 ```
 #57cc98 
