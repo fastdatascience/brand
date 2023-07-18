@@ -1,4 +1,4 @@
-__version__ = "0.3.0"
+__version__ = "0.3.1"
 
 # Brand a Plotly graph with Fast Data Science Light theme
 def brand(fig):
@@ -14,8 +14,6 @@ def brand(fig):
 
     fig.update_layout(
         font_family="Roboto, Roboto Bold, PT Sans, PT Sans Bold",
-        xaxis_title="Date",
-        yaxis_title="Postings per million",
         font=dict(
             family="Roboto, Roboto Bold, PT Sans, PT Sans Bold",
             size=18,
@@ -31,4 +29,9 @@ def brand(fig):
     fig.update_xaxes(showline=True, linewidth=1, linecolor='#cccccc', gridcolor='#cccccc')
     fig.update_yaxes(showline=True, linewidth=1, linecolor='#cccccc', gridcolor='#cccccc')
 
-    fig.update_traces(line_color='#80ed99')
+    try:
+        # line graph
+        fig.update_traces(line_color='#80ed99')
+    except:
+        # bar graph
+        fig.update_traces(marker_color='#57cc98')
