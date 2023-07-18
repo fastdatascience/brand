@@ -23,3 +23,20 @@ fig.show(renderer="png")
 ```
 
 ![fds.png](fds.png)
+
+### Histogram example
+
+```
+import fastdatascience
+import plotly.express as px
+
+df = pd.DataFrame({"conversion_rate":[0.1,0.2,0.3], "is_offer":[0,0,1]})
+
+fig = px.histogram(data_frame=df, x="conversion_rate", color="is_offer", title="Conversion rate",
+                   color_discrete_sequence=fastdatascience.colour_sequence
+                  )
+
+fastdatascience.brand(fig)
+
+fig.show(renderer="png")
+```
