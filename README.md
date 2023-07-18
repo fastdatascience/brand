@@ -11,7 +11,7 @@ This repository contains
 
 Primary
 
-<img src="colours/test.svg">
+![Alt text](./colours/test.svg)
 
 ```
 #57cc98 
