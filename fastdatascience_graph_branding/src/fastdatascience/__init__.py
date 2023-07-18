@@ -34,4 +34,4 @@ def brand(fig):
         fig.update_traces(line_color='#80ed99')
     except:
         # bar graph
-        fig.update_traces(marker_color='#57cc98')
+        fig.update_traces(marker_color='#0BC36E')
