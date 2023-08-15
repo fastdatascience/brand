@@ -24,10 +24,31 @@ fig.show(renderer="png")
 
 ![fds.png](fds.png)
 
+### Bar chart example
+
+```
+import fastdatascience
+import pandas as pd
+import plotly.express as px
+
+df = pd.DataFrame({"category":["health", "potato", "tomato"], "count":[1, 2, 3]})
+
+fig = px.bar(data_frame=df, x="count", y="category", title="Conversion rate",
+                   color_discrete_sequence=fastdatascience.colour_sequence
+                  )
+
+fastdatascience.brand(fig)
+
+fig.show(renderer="png")
+```
+
+![fds.png](bar_chart.png)
+
 ### Histogram example
 
 ```
 import fastdatascience
+import pandas as pd
 import plotly.express as px
 
 df = pd.DataFrame({"conversion_rate":[0.1,0.2,0.3], "is_offer":[0,0,1]})
@@ -40,3 +61,25 @@ fastdatascience.brand(fig)
 
 fig.show(renderer="png")
 ```
+
+
+
+### Pie example
+
+```
+import fastdatascience
+import pandas as pd
+import plotly.express as px
+
+df = pd.DataFrame({"category":["health", "potato", "tomato"], "count":[1, 2, 3]})
+
+fig = px.pie(data_frame=df, values="count", names="category", title="Conversion rate",
+                   color_discrete_sequence=fastdatascience.colour_sequence
+                  )
+
+fastdatascience.brand(fig)
+
+fig.show(renderer="png")
+```
+
+![fds.png](pie.png)
