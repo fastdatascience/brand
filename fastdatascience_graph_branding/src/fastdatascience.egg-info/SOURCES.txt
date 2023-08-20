@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/fastdatascience/__init__.py
+src/fastdatascience.egg-info/PKG-INFO
+src/fastdatascience.egg-info/SOURCES.txt
+src/fastdatascience.egg-info/dependency_links.txt
+src/fastdatascience.egg-info/requires.txt
+src/fastdatascience.egg-info/top_level.txt

@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: fastdatascience
+Version: 0.3.3
+Summary: Harmony Tool for Retrospective Data Harmonisation
+Home-page: https://github.com/harmonydata/harmony
+Author: Thomas Wood
+Author-email: thomas@fastdatascience.com
+Project-URL: Documentation, https://harmonydata.org/
+Project-URL: Bug Reports, https://github.com/harmonydata/harmony/issues
+Project-URL: Source Code, https://github.com/harmonydata/harmony
+Keywords: harmony,harmonisation,harmonization,harmonise,harmonize
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# Python library to produce Fast Data Science branded graphs in Plotly
+
+## Installation
+
+```
+pip install .
+```
+
+## Usage
+
+### Light theme
+
+```
+import fastdatascience
+
+import plotly.express as px
+fig = px.line(x=[1,2,3], y=[3,1,2],
+                title="<b>Receiver operating characteristic</b>")
+
+fastdatascience.brand(fig)
+
+fig.show(renderer="png")
+```
+
+![fds.png](fds.png)
+
+### Histogram example
+
+```
+import fastdatascience
+import plotly.express as px
+
+df = pd.DataFrame({"conversion_rate":[0.1,0.2,0.3], "is_offer":[0,0,1]})
+
+fig = px.histogram(data_frame=df, x="conversion_rate", color="is_offer", title="Conversion rate",
+                   color_discrete_sequence=fastdatascience.colour_sequence
+                  )
+
+fastdatascience.brand(fig)
+
+fig.show(renderer="png")
+```
