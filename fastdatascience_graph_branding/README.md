@@ -1,5 +1,7 @@
 # Python library to produce Fast Data Science branded graphs in Plotly
 
+<a href=\"https://colab.research.google.com/github/fastdatascience/brand/blob/main/fastdatascience_graph_branding/example_fast_data_science_branded_bar_chart.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>
+
 ## Installation
 
 ```
