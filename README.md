@@ -21,7 +21,6 @@ This repository contains
 
 ## Links to colours
 
-* https://www.color-hex.com/color/Fast D
 * https://www.color-hex.com/color/57cc98
 * https://www.color-hex.com/color/102a38
 * https://www.color-hex.com/color/225679
