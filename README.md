@@ -19,6 +19,20 @@ This repository contains
 * Logo files
 * Python library for making Fast Data Science-branded graphs in Plotly
 
+## Links to colours
+
+* https://www.color-hex.com/color/Fast D
+* https://www.color-hex.com/color/57cc98
+* https://www.color-hex.com/color/102a38
+* https://www.color-hex.com/color/225679
+* https://www.color-hex.com/color/37a1a3
+* https://www.color-hex.com/color/0bc36e
+* https://www.color-hex.com/color/7feb97
+* https://www.color-hex.com/color/c6f7ca
+* https://www.color-hex.com/color/0193fc
+* https://www.color-hex.com/color/bde55d
+
+
 # Quick reference: colours
 
 ## Primary
